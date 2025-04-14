@@ -10,7 +10,12 @@ sudo apt install -y docker.io
 sudo systemctl enable docker  
 sudo usermod -aG docker $USER
 # Step2: Create a directory SimpleTimeService
-Add app.js and Dockerfile in it
+mkdir SimpleTimeService && cd SimpleTimeService  
+npm init -y (installing all the dependencies)  
+npm install express (installing the Express.js library into project)  
+
+Add app.js and Dockerfile in the SimpleTimeService directory.
+
 # Step 3: Build the Docker Image
 docker build -t simpletimeservice .   (To build the image)  
 docker run -p 3000:3000 simpletimeservice  (To run Docker container)    
@@ -23,7 +28,7 @@ docker push piyushkeshri30/simpletimeservice:latest  (Pushing the image to Docke
 docker run -p 3000:3000 yourdockerhubusername/simpletimeservice:latest ( This can be accessed by anyone)  
 #  Example Output
 {
-  "timestamp": "2025-04-13T13:15:00.123Z",
+  "timestamp": "2025-04-13T13:15:00.123Z",  
   "ip": "::ffff:172.17.0.1"
 }
 
