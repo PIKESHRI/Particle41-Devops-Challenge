@@ -61,6 +61,7 @@ Terraform will create:
 3. Bastion EC2 host in public subnet  
 
 # Step3: Access Bastion Host  
+A bastion host is a secure EC2 instance in a public subnet, used as a stepping stone to access resources in private subnets.  
 1. Get Bastion IP:  
    => terraform output  
 3. SSH into it:  
