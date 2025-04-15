@@ -25,7 +25,7 @@ docker login  (To Login to Docker)
 docker tag simpletimeservice piyushkeshri30/simpletimeservice:latest  (Tagging an existing Docker image with a new name )  
 docker push piyushkeshri30/simpletimeservice:latest  (Pushing the image to DockerHub)  
 # Step 5: Run from DockerHub
-docker run -p 3000:3000 yourdockerhubusername/simpletimeservice:latest ( This can be accessed by anyone)  
+docker run -p 3000:3000 piyushkeshri30/simpletimeservice:latest   
 #  Example Output
 {
   "timestamp": "2025-04-13T13:15:00.123Z",  
