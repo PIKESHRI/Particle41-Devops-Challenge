@@ -26,7 +26,8 @@ Install eksctl
 => curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp  
 => sudo mv /tmp/eksctl /usr/local/bin  
 
-
+# Connect to the linux local machine  
+=> ssh -i Key-pair.pem ubuntu@public-ip  
 AWS Authentication  
 => aws configure  
 Enter AWS Access Key, Secret Key, Region (e.g., us-east-1), Output format(e.g., json)  
